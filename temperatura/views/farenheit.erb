@@ -1,0 +1,45 @@
+<style>
+body {
+	background-color: #5e5e5e;
+}
+
+</style>
+
+<section class="corverters  parallax-section" id="celsiusid">
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12" id="head1">
+        <div class="heading">
+          <h2><small>Corvert from Farenheit</small>Just enjoy this!</h2>
+        </div>
+      </div>
+      <div class="col-md-6 ">
+        <form method="POST">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Enter the temperature in Farenheit</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" name="tfar" placeholder="0 °F">
+            </div>
+              <button type="submit" class="btn btn-primary">Convert</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-leaf" aria-hidden="true"></i>
+                <h3>Celsius</h3>
+                <p>The value <%=@tfar%>°F in Celsius is: </p>
+                <p><%=@tfar1 if @tfar%> °C</p>
+            </div>
+            <div class="col-md-6 text-sm-center service-block"> <i class="fa fa-eraser" aria-hidden="true"></i>
+                <h3>Kelvin</h3>
+                <p>The value <%=@tfar%>°F in kelvin is: </p>
+                <p><%=@tfar2 if @tfar%> °K</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4"> <img src="https://images.vexels.com/media/users/3/144259/isolated/preview/be06308bc7a18f65606c92852047db26-temperature-icon-celcius-by-vexels.png" class="img-fluid" /> </div>
+      </div>    
+    </div>
+</div>
+</section>
