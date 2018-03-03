@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Celsius convertee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/home">Home</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/Celsius">Celsius</a></li>
+      <li class="active"><a href="/Farenheit">Farenheit</a></li>
+      <li class="active"><a href="#">kelvin</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h3>This converter to celsius</h3>
+  <img src="nature.jpg" class="img-thumbnail" alt="Cinque Terre">
+  <p>Celsius is a measurement of temperature in which 0 degrees represents the freezing point of water, and 100 degrees represents water’s boiling point at the standard atmosphere, which is the mean barometric pressure at the mean sea level.</p>
+</div>
+<div class="container">
+<form>
+    <div class="celsius">
+      <label for="celsius">celsius:</label>
+      <input type="input" class="form-control" id="celsius" placeholder="Enter celsius" value="">
+    </div>
+    <div class="Farenheit">
+      <label for="Farenheit">Farenheit</label>
+
+    <p id="demo"></p>
+
+
+    </div>
+    <div class="kelvin">
+      <label for="kelvin">kelvin:</label>
+      <span  class="form-control" id="pwd" placeholder="">
+    </div>
+    <button  onclick="myFunction()" >Submit</button>
+  </form>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("celsius").value;
+    document.getElementById("demo").innerHTML = ((9/5)* x)+32
+    console.log(x)
+    
+}
+</script>
+</body>
+</html>
